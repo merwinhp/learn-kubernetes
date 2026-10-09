@@ -18,3 +18,6 @@ spec:
       - image: docker.io/bootdotdev/synergychat-web:latest
         imagePullPolicy: Always
         name: synergychat-web
+        envFrom:
+        - configMapRef:
+            name: synergychat-web-configmap
